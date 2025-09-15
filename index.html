@@ -5,43 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Viradinha Premiada</title>
   <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#f9f9f9; color:#333; }
-    header { background:#2575fc; color:#fff; padding:20px; text-align:center; }
-    nav a { color:#fff; margin:0 10px; text-decoration:none; }
-    section { padding:40px 20px; max-width:800px; margin:auto; }
-    h1,h2 { color:#2575fc; }
-    footer { text-align:center; padding:20px; background:#eee; font-size:0.9rem; }
-  </style>
+  body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#1e90ff,#32cd32);color:#fff}
+  a{color:#ffeb3b;text-decoration:none}
+  a:hover{text-decoration:underline}
+  header{background:rgba(0,0,0,.6);padding:20px;text-align:center}
+  header h1{margin:0;font-size:2.4rem;color:#ffeb3b}
+  nav{margin-top:10px}
+  nav a{margin:0 10px;font-weight:bold}
+  .hero{text-align:center;padding:60px 20px}
+  .hero h2{font-size:2rem;margin-bottom:12px}
+  .hero p{font-size:1.1rem;max-width:780px;margin:0 auto}
+  .section{padding:32px 20px;background:rgba(0,0,0,.4);margin:20px;border-radius:12px}
+  .section h3{color:#ffeb3b;margin:.2rem 0 1rem}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .card{background:rgba(255,255,255,.08);padding:18px;border-radius:12px}
+  footer{text-align:center;padding:18px;background:rgba(0,0,0,.8);font-size:.95rem}
+  .container{max-width:1100px;margin:0 auto}
+</style>
 </head>
 <body>
   <header>
-    <h1>Viradinha Premiada</h1>
-    <p>Sorteios especiais de fim de ano com transparência e segurança.</p>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="contato.html">Contato</a>
-      <a href="politica.html">Política</a>
-      <a href="termos.html">Termos</a>
-      <a href="index-en.html">English</a>
-    </nav>
+    <h1>🎉 Viradinha Premiada 🎉</h1>
+    
+      <nav class="container">
+        <a href="index.html">Início</a>
+        <a href="contato.html">Contato</a>
+        <a href="politica.html">Política</a>
+        <a href="termos.html">Termos</a>
+        <span style="float:right"><a href="index-en.html">EN</a></span>
+      </nav>
+    
   </header>
-  <section>
-    <h2>Como funciona</h2>
-    <p>
-      O <strong>Viradinha Premiada</strong> é um aplicativo de sorteios promocionais,
-      onde os participantes podem adquirir números da sorte para concorrer
-      a prêmios que serão sorteados no final do ano, de forma semelhante
-      a promoções e loterias já conhecidas.
-    </p>
-    <h2>Proposta</h2>
-    <p>
-      A proposta do aplicativo é oferecer uma experiência simples,
-      transparente e divertida de sorteios, respeitando a legislação
-      brasileira e mantendo sempre a clareza sobre as regras.
-    </p>
+  
+  <section class="hero">
+    <div class="container">
+      <h2>O jogo de fim de ano que pode mudar sua vida!</h2>
+      <p>Inspirado na Mega da Virada e no espírito dos bingos tradicionais, a <strong>Viradinha Premiada</strong> traz diversão, emoção e prêmios incríveis. Participe, escolha seus números e acompanhe o grande sorteio no final do ano.</p>
+    </div>
   </section>
+
+  <section class="section container">
+    <h3>📅 Como funciona</h3>
+    <div class="grid">
+      <div class="card"><strong>1) Escolha números</strong><br/>Adquira suas cotas e receba seus números. Quanto mais números, maiores as chances.</div>
+      <div class="card"><strong>2) Acompanhe</strong><br/>Durante o ano, publicamos atualizações e curiosidades do jogo.</div>
+      <div class="card"><strong>3) Sorteio na virada</strong><br/>Na virada do ano ocorre o sorteio especial. Guarde seus comprovantes.</div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <h3>🎁 Prêmios</h3>
+    <p>Os prêmios serão divulgados ao longo da campanha. Nosso objetivo é começar o ano novo com o pé direito! Detalhes e regulamentos serão sempre publicados nesta página.</p>
+  </section>
+
+  <section class="section container">
+    <h3>✅ Transparência & Legal</h3>
+    <p>Este é um <strong>jogo de entretenimento privado</strong>. Não é loteria pública. Participação sujeita aos <a href="termos.html">Termos</a> e à <a href="politica.html">Política de Privacidade</a>. Se tiver dúvidas, fale com a gente.</p>
+  </section>
+
+  <section class="section container">
+    <h3>📞 Suporte</h3>
+    <p>Email: <a href="mailto:zeetagames212016@outlook.com">zeetagames212016@outlook.com</a><br/>
+       WhatsApp: +55 (43) 99108-2942<br/>
+       Endereço: Londrina - PR, Brasil</p>
+  </section>
+  
   <footer>
-    &copy; 2025 Viradinha Premiada — Todos os direitos reservados
+    <p>© 2025 Viradinha Premiada — Todos os direitos reservados</p>
+    <p><a href="politica.html">Política de Privacidade</a> | <a href="termos.html">Termos e Condições</a></p>
   </footer>
 </body>
 </html>
