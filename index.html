@@ -1,78 +1,91 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viradinha Premiada</title>
-  <style>
-  body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#1e90ff,#32cd32);color:#fff}
-  a{color:#ffeb3b;text-decoration:none}
-  a:hover{text-decoration:underline}
-  header{background:rgba(0,0,0,.6);padding:20px;text-align:center}
-  header h1{margin:0;font-size:2.4rem;color:#ffeb3b}
-  nav{margin-top:10px}
-  nav a{margin:0 10px;font-weight:bold}
-  .hero{text-align:center;padding:60px 20px}
-  .hero h2{font-size:2rem;margin-bottom:12px}
-  .hero p{font-size:1.1rem;max-width:780px;margin:0 auto}
-  .section{padding:32px 20px;background:rgba(0,0,0,.4);margin:20px;border-radius:12px}
-  .section h3{color:#ffeb3b;margin:.2rem 0 1rem}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-  .card{background:rgba(255,255,255,.08);padding:18px;border-radius:12px}
-  footer{text-align:center;padding:18px;background:rgba(0,0,0,.8);font-size:.95rem}
-  .container{max-width:1100px;margin:0 auto}
-</style>
-</head>
-<body>
-  <header>
-    <h1>🎉 Viradinha Premiada 🎉</h1>
-    
-      <nav class="container">
-        <a href="index.html">Início</a>
-        <a href="contato.html">Contato</a>
-        <a href="politica.html">Política</a>
-        <a href="termos.html">Termos</a>
-        <span style="float:right"><a href="index-en.html">EN</a></span>
-      </nav>
-    
-  </header>
-  
-  <section class="hero">
-    <div class="container">
-      <h2>O jogo de fim de ano que pode mudar sua vida!</h2>
-      <p>Inspirado na Mega da Virada e no espírito dos bingos tradicionais, a <strong>Viradinha Premiada</strong> traz diversão, emoção e prêmios incríveis. Participe, escolha seus números e acompanhe o grande sorteio no final do ano.</p>
-    </div>
-  </section>
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-  <section class="section container">
-    <h3>📅 Como funciona</h3>
-    <div class="grid">
-      <div class="card"><strong>1) Escolha números</strong><br/>Adquira suas cotas e receba seus números. Quanto mais números, maiores as chances.</div>
-      <div class="card"><strong>2) Acompanhe</strong><br/>Durante o ano, publicamos atualizações e curiosidades do jogo.</div>
-      <div class="card"><strong>3) Sorteio na virada</strong><br/>Na virada do ano ocorre o sorteio especial. Guarde seus comprovantes.</div>
-    </div>
-  </section>
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
 
-  <section class="section container">
-    <h3>🎁 Prêmios</h3>
-    <p>Os prêmios serão divulgados ao longo da campanha. Nosso objetivo é começar o ano novo com o pé direito! Detalhes e regulamentos serão sempre publicados nesta página.</p>
-  </section>
+/* Header e nav */
+header {
+  background: #222;
+  padding: 15px 0;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
 
-  <section class="section container">
-    <h3>✅ Transparência & Legal</h3>
-    <p>Este é um <strong>jogo de entretenimento privado</strong>. Não é loteria pública. Participação sujeita aos <a href="termos.html">Termos</a> e à <a href="politica.html">Política de Privacidade</a>. Se tiver dúvidas, fale com a gente.</p>
-  </section>
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.btn-download {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #28a745;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.btn-download:hover {
+  background: #218838;
+}
+.download-note {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #555;
+}
 
-  <section class="section container">
-    <h3>📞 Suporte</h3>
-    <p>Email: <a href="mailto:zeetagames212016@outlook.com">zeetagames212016@outlook.com</a><br/>
-       WhatsApp: +55 (43) 99108-2942<br/>
-       Endereço: Londrina - PR, Brasil</p>
-  </section>
-  
-  <footer>
-    <p>© 2025 Viradinha Premiada — Todos os direitos reservados</p>
-    <p><a href="politica.html">Política de Privacidade</a> | <a href="termos.html">Termos e Condições</a></p>
-  </footer>
-</body>
-</html>
+/* Seções principais */
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+section {
+  margin-bottom: 40px;
+}
+section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #222;
+}
+section p {
+  font-size: 18px;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+  margin-top: 40px;
+}

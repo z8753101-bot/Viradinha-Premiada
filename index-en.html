@@ -3,62 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viradinha Premiada - Home</title>
-  <style>
-  body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#1e90ff,#32cd32);color:#fff}
-  a{color:#ffeb3b;text-decoration:none}
-  a:hover{text-decoration:underline}
-  header{background:rgba(0,0,0,.6);padding:20px;text-align:center}
-  header h1{margin:0;font-size:2.4rem;color:#ffeb3b}
-  nav{margin-top:10px}
-  nav a{margin:0 10px;font-weight:bold}
-  .hero{text-align:center;padding:60px 20px}
-  .hero h2{font-size:2rem;margin-bottom:12px}
-  .hero p{font-size:1.1rem;max-width:780px;margin:0 auto}
-  .section{padding:32px 20px;background:rgba(0,0,0,.4);margin:20px;border-radius:12px}
-  .section h3{color:#ffeb3b;margin:.2rem 0 1rem}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-  .card{background:rgba(255,255,255,.08);padding:18px;border-radius:12px}
-  footer{text-align:center;padding:18px;background:rgba(0,0,0,.8);font-size:.95rem}
-  .container{max-width:1100px;margin:0 auto}
-</style>
+  <title>Viradinha Premiada</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>🎉 Viradinha Premiada 🎉</h1>
-    
-      <nav class="container">
-        <a href="index-en.html">Home</a>
-        <a href="contact-en.html">Contact</a>
-        <a href="policy-en.html">Policy</a>
-        <a href="terms-en.html">Terms</a>
-        <span style="float:right"><a href="index.html">PT-BR</a></span>
-      </nav>
-    
-  </header>
-  
+  <!-- 🔹 Initial screen with download button -->
   <section class="hero">
-    <div class="container">
-      <h2>Year-end fun with prizes!</h2>
-      <p><strong>Viradinha Premiada</strong> is a private entertainment game inspired by New Year raffles and bingo spirit. Pick your numbers and follow the special year-end draw.</p>
-    </div>
+    <h1>Download Viradinha Premiada</h1>
+    <a href="app-release.apk" class="btn-download">⬇️ Download APK</a>
+    <p class="download-note">Install now and join the New Year’s Eve prize draw 🎉</p>
   </section>
-  <section class="section container">
-    <h3>How it works</h3>
-    <div class="grid">
-      <div class="card"><strong>1) Pick numbers</strong><br/>Buy entries and receive your numbers.</div>
-      <div class="card"><strong>2) Follow updates</strong><br/>We share news during the campaign.</div>
-      <div class="card"><strong>3) New Year draw</strong><br/>Keep your receipts and good luck!</div>
-    </div>
-  </section>
-  <section class="section container">
-    <h3>Support</h3>
-    <p>Email: <a href="mailto:zeetagames212016@outlook.com">zeetagames212016@outlook.com</a></p>
-  </section>
-  
+
+  <!-- 🔹 Header with navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">🇧🇷 PT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🔹 Main content -->
+  <main>
+    <section id="about">
+      <h2>About Viradinha Premiada</h2>
+      <p>
+        Viradinha Premiada is Brazil’s most transparent lottery.  
+        You buy tickets safely via Pix and track everything inside the app.
+      </p>
+    </section>
+
+    <section id="how-it-works">
+      <h2>How It Works</h2>
+      <p>
+        Buy tickets, automatically receive your numbers in the app, and wait for the draw  
+        on December 31st. The prize is cumulative and can change your life!  
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Got questions? Contact us by email: 
+        <a href="mailto:suporte@viradinha.com">suporte@viradinha.com</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- 🔹 Footer -->
   <footer>
-    <p>© 2025 Viradinha Premiada — All rights reserved</p>
-    <p><a href="policy-en.html">Privacy Policy</a> | <a href="terms-en.html">Terms & Conditions</a></p>
+    <p>© 2025 Viradinha Premiada - All rights reserved</p>
   </footer>
 </body>
 </html>
