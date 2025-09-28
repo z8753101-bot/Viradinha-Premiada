@@ -9,7 +9,7 @@
 <body>
 <header>
   <div class="container nav">
-    <div class="brand">🎉 Viradinha Premiada</div>
+    <div class="brand">🎉 Viradinha Premiada 🎉</div>
     <ul class="lang">
       <li><a href="index-en.html">EN</a></li>
       <li><a href="policy.html">Políticas</a></li>
@@ -24,13 +24,20 @@
         <span class="badge">Novo • Download Oficial</span>
         <h1>Comece 2026 com o pé direito</h1>
         <p class="lead">
-          Baixe o app oficial da <strong>Viradinha Premiada</strong> e concorra no sorteio do dia <strong>31/12</strong>.
-          Cada bilhete custa <strong>R$ 5</strong> e vale <strong>10 números</strong>. Quanto mais bilhetes, maiores as chances. 
+          Baixe o app oficial da <strong>Viradinha Premiada</strong> e concorra no sorteio do dia <strong>31/12</strong>.  
+          Cada bilhete custa <strong>R$ 5</strong> e vale <strong>10 números</strong>.  
+          Quanto mais bilhetes, maiores as chances.  
           A premiação é <strong>acumulativa</strong> e <strong>dividida entre vários ganhadores</strong>.
         </p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn" href="ViradinhaPremiada.apk" download>⬇️ Baixar APK (Android)</a>
-          <a class="btn secondary" href="#como-funciona">Como funciona</a>
+
+        <!-- Checkbox de aceite dos termos -->
+        <div style="margin-top:20px">
+          <label style="font-size:14px">
+            <input type="checkbox" id="acceptTerms">
+            Li e aceito os <a href="policy.html" target="_blank">Termos de Uso</a>.
+          </label>
+          <br><br>
+          <a class="btn" id="downloadBtn" href="#" onclick="checkTerms(event)">⬇️ Baixar APK (Android)</a>
         </div>
       </div>
       <div>
@@ -46,7 +53,7 @@
     <div class="grid col-3">
       <div class="card"><h3>🔐 Compra segura</h3><p>Pix via LivePix com segurança total.</p></div>
       <div class="card"><h3>🎫 Bilhetes acessíveis</h3><p>R$ 5 cada, com 10 números inclusos.</p></div>
-      <div class="card"><h3>🏆 Prêmio acumulativo</h3><p>Valor cresce com a arrecadação.</p></div>
+      <div class="card"><h3>🏆 Prêmio acumulativo</h3><p>O valor cresce com a arrecadação.</p></div>
     </div>
   </section>
 
@@ -67,5 +74,17 @@
 <footer>
   <div class="container">© 2025 Viradinha Premiada • <a href="policy.html">Políticas</a></div>
 </footer>
+
+<script>
+  function checkTerms(e){
+    const cb = document.getElementById("acceptTerms");
+    if(!cb.checked){
+      e.preventDefault();
+      alert("Você precisa aceitar os Termos antes de baixar.");
+    } else {
+      document.getElementById("downloadBtn").setAttribute("href","ViradinhaPremiada.apk");
+    }
+  }
+</script>
 </body>
 </html>

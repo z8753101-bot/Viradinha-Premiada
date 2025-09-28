@@ -9,7 +9,7 @@
 <body>
 <header>
   <div class="container nav">
-    <div class="brand">🎉 Viradinha Premiada</div>
+    <div class="brand">🎉 Viradinha Premiada 🎉</div>
     <ul class="lang">
       <li><a href="index.html">PT</a></li>
       <li><a href="policy-en.html">Policies</a></li>
@@ -24,12 +24,19 @@
         <span class="badge">New • Official Download</span>
         <h1>Start 2026 the right way</h1>
         <p class="lead">
-          Download the official <strong>Viradinha Premiada</strong> app and join the draw on <strong>Dec 31</strong>.
-          Each ticket costs <strong>R$ 5</strong> and includes <strong>10 numbers</strong>. The prize is <strong>accumulative</strong> and <strong>shared among multiple winners</strong>.
+          Download the official <strong>Viradinha Premiada</strong> app and join the draw on <strong>Dec 31</strong>.  
+          Each ticket costs <strong>R$ 5</strong> and includes <strong>10 numbers</strong>.  
+          The prize is <strong>accumulative</strong> and <strong>shared among multiple winners</strong>.
         </p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn" href="ViradinhaPremiada.apk" download>⬇️ Download APK (Android)</a>
-          <a class="btn secondary" href="#how">How it works</a>
+
+        <!-- Checkbox -->
+        <div style="margin-top:20px">
+          <label style="font-size:14px">
+            <input type="checkbox" id="acceptTerms">
+            I have read and accept the <a href="policy-en.html" target="_blank">Terms of Use</a>.
+          </label>
+          <br><br>
+          <a class="btn" id="downloadBtn" href="#" onclick="checkTerms(event)">⬇️ Download APK (Android)</a>
         </div>
       </div>
       <div>
@@ -45,7 +52,7 @@
     <div class="grid col-3">
       <div class="card"><h3>🔐 Secure payment</h3><p>Pix via LivePix with safety.</p></div>
       <div class="card"><h3>🎫 Affordable</h3><p>R$ 5 per ticket with 10 numbers.</p></div>
-      <div class="card"><h3>🏆 Accumulative prize</h3><p>Prize grows with total collected.</p></div>
+      <div class="card"><h3>🏆 Accumulative prize</h3><p>The prize grows with total collected.</p></div>
     </div>
   </section>
 
@@ -66,5 +73,17 @@
 <footer>
   <div class="container">© 2025 Viradinha Premiada • <a href="policy-en.html">Policies</a></div>
 </footer>
+
+<script>
+  function checkTerms(e){
+    const cb = document.getElementById("acceptTerms");
+    if(!cb.checked){
+      e.preventDefault();
+      alert("You must accept the Terms before downloading.");
+    } else {
+      document.getElementById("downloadBtn").setAttribute("href","ViradinhaPremiada.apk");
+    }
+  }
+</script>
 </body>
 </html>
