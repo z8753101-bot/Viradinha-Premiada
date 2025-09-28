@@ -89,3 +89,27 @@ footer {
   color: #fff;
   margin-top: 40px;
 }
+:root{
+  --bg:#0e1116;
+  --panel:#1c232e;
+  --accent:#2ecc71;
+  --accent-2:#27ae60;
+  --text:#e8ecf1;
+  --muted:#a9b4c0;
+}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+header{background:#111;position:sticky;top:0}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+.nav .brand{font-weight:800}
+.nav ul{list-style:none;display:flex;gap:20px}
+.nav a{color:var(--muted);text-decoration:none}
+.hero{padding:60px 0}
+.hero .panel{background:var(--panel);border-radius:16px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.btn{background:var(--accent);color:#000;padding:14px 20px;border-radius:10px;text-decoration:none;font-weight:bold}
+.btn:hover{background:var(--accent-2)}
+.btn.secondary{background:#333;color:#fff}
+.card{background:var(--panel);padding:20px;border-radius:12px}
+.section{margin:40px 0}
+.features{list-style:disc;padding-left:20px}
+footer{text-align:center;padding:20px;background:#111;color:var(--muted)}
